@@ -135,13 +135,13 @@ window.addEventListener('scroll', scrollHeader)
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
-    duration: 2500,
-    delay: 400,
+    duration: 312,
+    delay: 50,
     // reset: true /*Animations repeat*/
 })
 
 sr.reveal('.home__data, .gallery__container, .testimonial__container, .contact__content')
-sr.reveal('.home__info div, .footer__container', {delay:600, origin: 'bottom', interval: 100})
+sr.reveal('.home__info div, .footer__container', {delay:75, origin: 'bottom', interval: 25})
 sr.reveal('.skills__content:nth-child(1)', {origin: 'left'})
 sr.reveal('.skills__content:nth-child(2)', {origin: 'right'})
-sr.reveal('.qualification__content, .hobbies__card', {interval: 100})
+sr.reveal('.qualification__content, .hobbies__card', {interval: 25})

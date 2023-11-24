@@ -29,8 +29,8 @@ const linkAction = () =>{
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*=============== SWIPER PROJECTS ===============*/
-let swiperProjects = new Swiper(".projects__container", {
+/*=============== SWIPER GALLERY ===============*/
+let swiperProjects = new Swiper(".gallery__container", {
     loop: true,
     spaceBetween: 24,
     
@@ -140,7 +140,7 @@ const sr = ScrollReveal({
     // reset: true /*Animations repeat*/
 })
 
-sr.reveal('.home__data, .projects__container, .testimonial__container, .contact__content')
+sr.reveal('.home__data, .gallery__container, .testimonial__container, .contact__content')
 sr.reveal('.home__info div, .footer__container', {delay:600, origin: 'bottom', interval: 100})
 sr.reveal('.skills__content:nth-child(1)', {origin: 'left'})
 sr.reveal('.skills__content:nth-child(2)', {origin: 'right'})

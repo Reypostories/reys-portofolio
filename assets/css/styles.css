@@ -535,6 +535,12 @@ body.dark-theme {
   margin-bottom: 1.25rem;
 }
 
+.qualification__name a{
+  text-decoration: none;
+  color: var(--title-color);
+  transition: background .4s; /* for dark mode animation */
+}
+
 .qualification__country,
 .qualification__year{
   display: block;
@@ -608,34 +614,34 @@ body.dark-theme {
   opacity: 1;
 }
 
-/*=============== PROJECTS ===============*/
-.projects__container{
+/*=============== GALLERY ===============*/
+.gallery__container{
   overflow: initial;
 }
 
-.projects__content{
+.gallery__content{
   display: grid;
   justify-content: center;
 }
 
-.projects__img{
+.gallery__img{
   width: 250px;
   border-radius: .75rem;
   margin-bottom: 1.25rem;
 }
 
-.projects__subtitle{
+.gallery__subtitle{
   font-size: var(--small-font-size);
   color: var(--text-color-light);
 }
 
-.projects__title{
+.gallery__title{
   font-size: var(--h2-font-size);
   margin-bottom: 1.25rem;
   margin: .5rem 0 1.25rem;
 }
 
-.projects__button{
+.gallery__button{
   display: inline-flex;
   align-items: center;
   column-gap: .5rem;
@@ -643,23 +649,23 @@ body.dark-theme {
   font-size: var(--small-font-size);
 }
 
-.projects__button i{
+.gallery__button i{
   font-size: 1rem;
   transition: transform .3s;
 }
 
-.projects__button:hover i{
+.gallery__button:hover i{
   transform: translateX(.25rem);
 }
 
 /* Swiper class */
-.projects__container .swiper-button-prev::after,
-.projects__container .swiper-button-next::after{
+.gallery__container .swiper-button-prev::after,
+.gallery__container .swiper-button-next::after{
   content: '';
 }
 
-.projects__container .swiper-button-prev,
-.projects__container .swiper-button-next{
+.gallery__container .swiper-button-prev,
+.gallery__container .swiper-button-next{
   width: initial;
   height: initial;
   margin: initial;
@@ -667,30 +673,30 @@ body.dark-theme {
   color: var(--title-color);
 }
 
-.projects__container .swiper-button-prev{
+.gallery__container .swiper-button-prev{
   left: -1rem;
   top: 4.5rem;
 }
 
-.projects__container .swiper-button-next{
+.gallery__container .swiper-button-next{
   right: -1rem;
   top: 4.5rem;
 }
 
-.projects__container .swiper-slide{
+.gallery__container .swiper-slide{
   margin-bottom: 4.5rem;
 }
 
-.projects__container .swiper-pagination-bullets{
+.gallery__container .swiper-pagination-bullets{
   bottom: 0;
 }
 
-.projects__container .swiper-pagination-bullet{
+.gallery__container .swiper-pagination-bullet{
   background-color: var(--text-color-light);
   opacity: initial;
 }
 
-.projects__container .swiper-pagination-bullet-active{
+.gallery__container .swiper-pagination-bullet-active{
   background-color: var(--title-color);
 }
 
@@ -948,7 +954,7 @@ body.dark-theme {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .projects__img{
+  .gallery__img{
     width: 200px;
     justify-self: center;
   }
@@ -969,20 +975,20 @@ body.dark-theme {
     justify-content: center;
   }
 
-  .projects__container,
+  .gallery__container,
   .testimonial__container{
     width: 400px;
   }
 
-  .projects__container{
+  .gallery__container{
     overflow: hidden;
   }
 
-  .projects__container .swiper-button-prev{
+  .gallery__container .swiper-button-prev{
     left: 1rem;
   }
 
-  .projects__container .swiper-button-next{
+  .gallery__container .swiper-button-next{
     right: 1rem;
   }
 
@@ -1025,7 +1031,7 @@ body.dark-theme {
     column-gap: 10rem;
   }
 
-  .projects__container{
+  .gallery__container{
     width: 500px;
   }
 
@@ -1234,25 +1240,25 @@ body.dark-theme {
     border-radius: 8.25rem;
   }
 
-  .projects__container{
+  .gallery__container{
     width: 900px;
   }
-  .projects__container .swiper-button-prev,
-  .projects__container .swiper-button-next{
+  .gallery__container .swiper-button-prev,
+  .gallery__container .swiper-button-next{
     font-size: 3rem;
   }
-  .projects__container .swiper-button-prev{
+  .gallery__container .swiper-button-prev{
     left: -1rem;
     top: 25%;
   }
-  .projects__container .swiper-button-next{
+  .gallery__container .swiper-button-next{
     right: -1rem;
     top: 25%;
   }
-  .projects__container .swiper-slide{
+  .gallery__container .swiper-slide{
     margin-bottom: 6.5rem;
   }
-  .projects__img{
+  .gallery__img{
     width: 550px;
     margin-bottom: 2rem;
   }
